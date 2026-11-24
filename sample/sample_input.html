@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Source2HTML</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgrey;">
+<pre>
+<span class="preprocess_dir">#include</span> <span class="header_file">&lt;stdio.h&gt;</span>
+<span class="preprocess_dir">#include</span> <span class="header_file">"header.h"</span>
+
+<span class="preprocess_dir">#define</span> <span class="identifier">SIZE</span> <span class="numeric_constant">100</span>
+<span class="preprocess_dir">#define</span> <span class="identifier">PI</span> <span class="numeric_constant">3.14</span>
+
+<span class="comment">/* Multi line comment
+   Line 2
+   Line 3
+*/</span>
+
+<span class="reserved_key1">int</span> <span class="reserved_key2">add</span><span class="symbol">(</span><span class="reserved_key1">int</span> <span class="identifier">a</span><span class="symbol">,</span> <span class="reserved_key1">int</span> <span class="identifier">b</span><span class="symbol">)</span>
+<span class="symbol">{</span>
+    <span class="reserved_key1">return</span> <span class="identifier">a</span> <span class="operator">+</span> <span class="identifier">b</span><span class="symbol">;</span>
+<span class="symbol">}</span>
+
+<span class="reserved_key1">int</span> <span class="reserved_key2">main</span><span class="symbol">(</span><span class="symbol">)</span>
+<span class="symbol">{</span>
+    <span class="reserved_key1">int</span> <span class="identifier">num</span> <span class="operator">=</span> <span class="numeric_constant">100</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">float</span> <span class="identifier">f</span> <span class="operator">=</span> <span class="numeric_constant">12.56</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">double</span> <span class="identifier">d</span> <span class="operator">=</span> <span class="numeric_constant">123.456</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">int</span> <span class="identifier">hex</span> <span class="operator">=</span> <span class="numeric_constant">0xABCD</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">char</span> <span class="identifier">ch</span> <span class="operator">=</span> <span class="ascii_char">'A'</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">char</span> <span class="identifier">nl</span> <span class="operator">=</span> <span class="ascii_char">'\n'</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">char</span> <span class="identifier">quote</span> <span class="operator">=</span> <span class="ascii_char">'\''</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">char</span> <span class="operator">*</span><span class="identifier">str</span> <span class="operator">=</span> <span class="string">"Hello World"</span><span class="symbol">;</span>
+
+    <span class="reserved_key1">char</span> <span class="operator">*</span><span class="identifier">str2</span> <span class="operator">=</span> <span class="string">"Value = %d\n"</span><span class="symbol">;</span>
+
+    <span class="comment">// Single line comment</span>
+
+    <span class="reserved_key1">if</span><span class="symbol">(</span><span class="identifier">num</span> <span class="operator">>=</span> <span class="numeric_constant">10</span> <span class="operator">&&</span> <span class="identifier">num</span> <span class="operator"><=</span> <span class="numeric_constant">500</span><span class="symbol">)</span>
+    <span class="symbol">{</span>
+        <span class="reserved_key2">printf</span><span class="symbol">(</span><span class="string">"Number = %d\n"</span><span class="symbol">,</span> <span class="identifier">num</span><span class="symbol">)</span><span class="symbol">;</span>
+
+        <span class="reserved_key2">printf</span><span class="symbol">(</span><span class="identifier">str2</span><span class="symbol">,</span> <span class="identifier">num</span><span class="symbol">)</span><span class="symbol">;</span>
+    <span class="symbol">}</span>
+
+    <span class="reserved_key1">return</span> <span class="numeric_constant">0</span><span class="symbol">;</span>
+<span class="symbol">}</span></pre>
+</body>
+</html>
